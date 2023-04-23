@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeBlog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="head">
+            <h2 id="title-blog">Pokéblog</h2>
+            <input placeholder="Digite o Pokémon:" type="text" id="poke-search" onkeydown="pokeSearch(this)">
+            <img id="pokeballs-img" src="https://www.models-resource.com/resources/big_icons/26/25187.png?updated=1527171218" alt="Pokeballs" width="120px">
+        </div>
+        <div class="container">
+            <div class="contain">
+                <h1 id="poke-title">Ditto</h1>
+                <img id="poke-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" alt="Ditto">
+                <h3 id="habilities-title">O Pokémon Ditto tem diversas habilidades, como:</h3>
+                <p id="habilities">Habilidades</p>
+                <h3 id="type-title">Ele é do tipo:</h3>
+                <p id="type">Tipo</p>
+                <h3 id="evolutions-title">Evoluções</h3>
+                <p id="evolutions">Ditto só</p>
+            </div>
+            <div class="suggestions">
+                <h3 id="suggestions-title">Sugestões</h3>
+                <img id="img-1" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" onclick="suggestionClick(this)">
+                <img id="img-2" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" onclick="suggestionClick(this)">
+                <img id="img-3" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" onclick="suggestionClick(this)">
+            </div>
+        </div>
+    </div>
+        
+    <script src="script.js"></script>
+</body>
+</html>
